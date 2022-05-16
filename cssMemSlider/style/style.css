@@ -117,6 +117,10 @@ body {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    -webkit-transition: border ease-in-out .5s;
+        -moz-transition: border ease-in-out .5s;
+        -o-transition: border ease-in-out .5s;
+        transition: border ease-in-out .5s;
 }
 .wrapper label {
     cursor: pointer;
@@ -135,7 +139,7 @@ body {
     transition: background ease-in-out .5s;
 }
 
-.wrapper label:hover,
+/* .wrapper label:hover,  */
 #slide1:checked~.controls label:nth-of-type(1),
 #slide2:checked~.controls label:nth-of-type(2),
 #slide3:checked~.controls label:nth-of-type(3),
@@ -144,6 +148,10 @@ body {
 #slide6:checked~.controls label:nth-of-type(6),
 #slide7:checked~.controls label:nth-of-type(7) {
     background: #002983;
+    
+}
+.wrapper label:hover:after{
+    border: 2px solid #002983;
 }
 .slides {
     height: inherit;
@@ -189,7 +197,7 @@ body {
 .slide_desc {
     flex-shrink: 0;
     width: 100%;
-    color: #002983;
+    color: #bb0000;
     font-size: 1.9rem;
     letter-spacing: 0.1rem;
     transition: 0.8s;
