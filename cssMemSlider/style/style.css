@@ -15,7 +15,7 @@ body {
 }
 .wrapper {
   height: 700px;
-  margin: 150px auto 20%;
+  margin: 150px auto 100px ;
   position: relative;
   padding: 0 20px;
   width: 100%;
@@ -274,4 +274,11 @@ body {
     letter-spacing: 0.1rem;
     transition: 0.8s;
   }
+}
+ a.link{
+text-decoration: none;
+color: aqua;
+display: flex;
+justify-content: center;
+font-size: large;   
 }
